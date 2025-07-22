@@ -34,13 +34,14 @@ const Contact = () => {
 
         <div className="flex gap-6 text-3xl mt-4">
           <a
-            href="mailto:rushibhumkar11@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rushibhumkar11@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition-colors duration-300"
           >
             <FaEnvelope />
           </a>
+
           <a
             href="https://github.com/Rushibhumkar"
             target="_blank"

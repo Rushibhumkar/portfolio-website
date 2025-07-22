@@ -13,15 +13,19 @@ const Footer = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6"
       >
-        <p className="text-sm text-center sm:text-left">
-          © {new Date().getFullYear()} Rushikesh Bhumkar. All rights reserved.
-        </p>
+        <div className="text-center sm:text-left">
+          <p className="text-sm">
+            © {new Date().getFullYear()} Rushikesh Bhumkar. All rights reserved.
+          </p>
+          <p className="text-sm mt-1">📞 +91 7972755589</p>
+        </div>
 
         <div className="flex gap-4 text-xl">
           <a
-            href="mailto:rushibhumkar11@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rushibhumkar11@gmail.com"
             className="hover:text-blue-500 transition-colors"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaEnvelope />
           </a>
@@ -29,6 +33,7 @@ const Footer = () => {
             href="https://github.com/Rushibhumkar"
             className="hover:text-gray-900 dark:hover:text-white transition-colors"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
@@ -36,6 +41,7 @@ const Footer = () => {
             href="https://linkedin.com/in/rushibh"
             className="hover:text-blue-600 transition-colors"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>

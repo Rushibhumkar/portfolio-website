@@ -14,7 +14,11 @@ const ResumeDownload = () => {
         className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform hover:scale-105"
       >
         <FaDownload className="text-xl" />
-        <a href="/Rushikesh_Resume.pdf" download>
+        <a
+          href="https://drive.google.com/drive/folders/1lRR2zGsh74XrKfZ0tcy9-WsSq_NsEcgF"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Download My Resume
         </a>
       </motion.div>

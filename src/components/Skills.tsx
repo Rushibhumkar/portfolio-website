@@ -2,12 +2,22 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaAws,
+  FaAndroid,
+  FaApple,
+} from "react-icons/fa";
 import {
   SiTypescript,
   SiFirebase,
   SiNextdotjs,
   SiMongodb,
+  SiDocker,
+  SiRedux,
+  SiFigma,
 } from "react-icons/si";
 
 const skills = [
@@ -15,7 +25,10 @@ const skills = [
     name: "React Native",
     icon: <FaReact size={40} className="text-blue-500" />,
   },
-  { name: "Node.js", icon: <FaNodeJs size={40} className="text-green-500" /> },
+  {
+    name: "Node.js",
+    icon: <FaNodeJs size={40} className="text-green-500" />,
+  },
   {
     name: "TypeScript",
     icon: <SiTypescript size={40} className="text-blue-600" />,
@@ -28,8 +41,38 @@ const skills = [
     name: "Next.js",
     icon: <SiNextdotjs size={40} className="text-black dark:text-white" />,
   },
-  { name: "MongoDB", icon: <SiMongodb size={40} className="text-green-600" /> },
-  { name: "Git", icon: <FaGitAlt size={40} className="text-orange-500" /> },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb size={40} className="text-green-600" />,
+  },
+  {
+    name: "Git",
+    icon: <FaGitAlt size={40} className="text-orange-500" />,
+  },
+  {
+    name: "AWS",
+    icon: <FaAws size={40} className="text-yellow-500" />,
+  },
+  {
+    name: "Docker",
+    icon: <SiDocker size={40} className="text-blue-400" />,
+  },
+  {
+    name: "Redux",
+    icon: <SiRedux size={40} className="text-purple-600" />,
+  },
+  {
+    name: "Android",
+    icon: <FaAndroid size={40} className="text-green-500" />,
+  },
+  {
+    name: "iOS",
+    icon: <FaApple size={40} className="text-gray-700 dark:text-white" />,
+  },
+  {
+    name: "UI/UX (Figma)",
+    icon: <SiFigma size={40} className="text-pink-500" />,
+  },
 ];
 
 const Skills = () => {
@@ -59,7 +102,7 @@ const Skills = () => {
             className="bg-white dark:bg-[#0f172a] shadow-lg rounded-xl p-5 flex flex-col items-center justify-center hover:scale-105 transition-transform duration-300"
           >
             {skill.icon}
-            <p className="mt-3 text-sm sm:text-base font-medium">
+            <p className="mt-3 text-sm sm:text-base font-medium text-center">
               {skill.name}
             </p>
           </motion.div>
