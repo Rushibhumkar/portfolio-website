@@ -1,20 +1,18 @@
-import React from "react";
 import { notFound } from "next/navigation";
-// import Image from "next/image";
 import { allProjects } from "@/constants/data";
 
-interface ProjectPageProps {
+type ProjectDetailsPageProps = {
   params: {
     slug: string;
   };
-}
+};
 
-const ProjectDetailsPage = ({ params }: ProjectPageProps) => {
+export default function ProjectDetailsPage({
+  params,
+}: ProjectDetailsPageProps) {
   const project = allProjects.find((p) => p.slug === params.slug);
 
-  if (!project) {
-    return notFound();
-  }
+  if (!project) return notFound();
 
   return (
     <main className="min-h-screen bg-white dark:bg-[#0f172a] text-gray-900 dark:text-white px-6 py-12 sm:px-20">
@@ -26,6 +24,7 @@ const ProjectDetailsPage = ({ params }: ProjectPageProps) => {
         <p className="text-gray-700 dark:text-gray-300 mb-6 text-sm sm:text-base">
           {project.description}
         </p>
+
         <div className="w-full h-48 bg-white p-4 flex items-center justify-center">
           <project.image className="max-h-full max-w-full object-contain" />
         </div>
@@ -70,6 +69,4 @@ const ProjectDetailsPage = ({ params }: ProjectPageProps) => {
       </div>
     </main>
   );
-};
-
-export default ProjectDetailsPage;
+}
