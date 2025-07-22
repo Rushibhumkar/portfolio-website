@@ -7,7 +7,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import ResumeDownload from "@/components/ResumeDownload";
 import Skills from "@/components/Skills";
-import QuantiixLogo from "./svgComp/Quantiix";
+// import QuantiixLogo from "./svgComp/Quantiix";
 export default function Home() {
   return (
     <>

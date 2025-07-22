@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { allProjects } from "@/constants/data";
-import { myConsole } from "@/utils/myConsole";
+// import { myConsole } from "@/utils/myConsole";
 const Projects = () => {
   return (
     <section

@@ -1,6 +1,8 @@
-export const myConsole = (key: string, value: any) => {
-  let type = typeof value;
-  return type === "string"
-    ? console.log(key, value)
-    : console.log(key, JSON.stringify(value, null, 2));
+export const myConsole = (key: string, value: unknown): void => {
+  const type = typeof value;
+  if (type === "string") {
+    console.log(key, value);
+  } else {
+    console.log(key, JSON.stringify(value, null, 2));
+  }
 };
