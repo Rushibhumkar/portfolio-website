@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Startup", href: "#startup" },
   //   { name: "Testimonials", href: "#testimonials" },
   { name: "Contact", href: "#contact" },
+  { name: "KinSupport", href: "#kinsupport" },
 ];
 
 const Header = () => {
